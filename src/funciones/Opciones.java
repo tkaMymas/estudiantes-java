@@ -11,6 +11,7 @@ public class Opciones {
         String nombre = input.nextLine();
         listadoEstudiantes.add(nombre);
 
+        System.out.println();
         Menu.menu();
     }
     public static void expulsar(){
@@ -22,9 +23,10 @@ public class Opciones {
             listadoEstudiantes.remove(eleccion);
         }
         catch (Exception e){
-            System.out.println("Ingrese un Index valido.");
+            System.out.println("Ingrese un Index valido.\n");
         }
 
+        System.out.println();
         Menu.menu();
     }
     public static void listado(){
@@ -32,9 +34,9 @@ public class Opciones {
         for (String i : listadoEstudiantes){
             System.out.println("- " + i);
         }
-        System.out.print("Presione ENTER para volver al menú...");
-        input.nextLine();
+        System.out.println("====================");
 
+        System.out.println();
         Menu.menu();
     }
 }
